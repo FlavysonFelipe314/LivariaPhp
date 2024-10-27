@@ -27,8 +27,8 @@ $livros = $books->read();
         
     <?php foreach ($livros as $livro):?>
         <div class="content" style="display:flex; flex-direction:column; margin:0 10px 0 0;">
-            <p><?= $livro->getTitle()?></p>
             <img src="<?= $baseDir?>/uploads/capas/<?= $livro->getCapa()?>" width="150px" height="200px" alt="">
+            <p><?= $livro->getTitle()?></p>
             <a href="<?= $baseDir?>/uploads/<?= $livro->getSrc()?>">
                 <button>quero Ler</button>
             </a>
