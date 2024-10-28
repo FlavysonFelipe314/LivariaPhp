@@ -3,7 +3,6 @@
 $base = "http://localhost/books/public";
 $baseDir = "http://localhost/books";
 
-
 define("DB_HOST", "localhost");
 define("DB_NAME", "books");
 define("DB_USER", "root");

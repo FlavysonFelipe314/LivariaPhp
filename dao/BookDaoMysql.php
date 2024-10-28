@@ -11,6 +11,7 @@ interface BookDao{
     public function delete($id);
     public function findById($id);
     public function findByCategoria($query);
+    public function findLikeQuery($query);
     public function update(Book $b);
 }
 
@@ -112,6 +113,29 @@ class BookDaoMysql implements BookDao{
 
         $sql = $this->pdo->prepare("SELECT * FROM books WHERE categoria = :categoria");
         $sql->bindValue(":categoria", $query);
+        $sql->execute();
+
+        $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach($data as $item){
+            $b = new Book;
+            $b->setId($item["id"]);
+            $b->setTitle($item["title"]);
+            $b->setSrc($item["src"]);
+            $b->setCapa($item["capa"]);
+            $b->setAutor($item["autor"]);
+            $b->setCategoria($item["categoria"]);
+
+            $array[] = $b;
+        }
+        return $array;
+    }
+
+    public function findLikeQuery($query){
+        $array = [];
+
+        $sql = $this->pdo->prepare("SELECT * FROM books WHERE title LIKE :query");
+        $sql->bindValue(':query', '%' . $query . '%', PDO::PARAM_STR); 
         $sql->execute();
 
         $data = $sql->fetchAll(PDO::FETCH_ASSOC);

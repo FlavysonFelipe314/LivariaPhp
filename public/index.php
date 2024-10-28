@@ -16,63 +16,63 @@ include_once "../partials/header.php";
 
     <section class="circle-menu">
       <nav>
-        <a href="<?= $base?>/search.php?query=aventura">
+        <a href="<?= $base?>/topics.php?query=aventura">
           <div class="single-circle">
             <img src="src/assets/icons/location.png" alt="" />
           </div>
           <p>Aventura</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=religiao">
+        <a href="<?= $base?>/topics.php?query=religiao">
           <div class="single-circle">
             <img src="src/assets/icons/bible.png" alt="" />
           </div>
           <p>Religião</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=terror">
+        <a href="<?= $base?>/topics.php?query=terror">
           <div class="single-circle">
             <img src="src/assets/icons/castle.png" alt="" />
           </div>
           <p>Terror</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=ficcao">
+        <a href="<?= $base?>/topics.php?query=ficcao">
           <div class="single-circle">
             <img src="src/assets/icons/science-fiction.png" alt="" />
           </div>
           <p>Ficção</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=romance">
+        <a href="<?= $base?>/topics.php?query=romance">
           <div class="single-circle">
             <img src="src/assets/icons/love-books.png" alt="" />
           </div>
           <p>Romance</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=tecnologia">
+        <a href="<?= $base?>/topics.php?query=tecnologia">
           <div class="single-circle">
             <img src="src/assets/icons/project-management.png" alt="" />
           </div>
           <p>Tecnologia</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=estudos">
+        <a href="<?= $base?>/topics.php?query=estudos">
           <div class="single-circle">
             <img src="src/assets/icons/graduation-hat.png" alt="" />
           </div>
           <p>Estudos</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=comedia">
+        <a href="<?= $base?>/topics.php?query=comedia">
           <div class="single-circle">
             <img src="src/assets/icons/movie.png" alt="" />
           </div>
           <p>Comédia</p>
         </a>
 
-        <a href="<?= $base?>/search.php?query=outros">
+        <a href="<?= $base?>/topics.php?query=outros">
           <div class="single-circle">
             <img src="src/assets/icons/more.png" alt="" />
           </div>

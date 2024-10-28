@@ -51,7 +51,7 @@
             onclick="sendHome()"
           />
 
-          <form action="" method="GET" id="searchBar">
+          <form action="search.php" method="GET" id="searchBar">
             <button type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -73,10 +73,10 @@
               <i class="fa-solid fa-book"></i>
               <span>Meus Livros</span>
             </a>
-
+<!-- 
             <div class="avatar-user">
               <img src="<?= $base?>/src/assets/images/Avatar.png" alt="" />
-            </div>
+            </div> -->
           </nav>
         </nav>
 
@@ -101,7 +101,7 @@
             onclick="sendHome()"
           />
 
-          <form action="" method="GET" id="searchBar">
+          <form action="search.php" method="GET" id="searchBar">
             <button type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -124,10 +124,10 @@
               <span>Meus Livros</span>
             </a>
 
-            <a href="" class="menu-option">
+            <!-- <a href="" class="menu-option">
               <i class="fa-solid fa-user"></i>
               <span>Perfil</span>
-            </a>
+            </a> -->
           </nav>
         </nav>
       </div>

@@ -5,10 +5,10 @@ use dao\BookDaoMysql;
 require_once "../vendor/autoload.php";
 require_once "../Config/Database.php";
 
-$query = filter_input(INPUT_GET, "query", FILTER_SANITIZE_SPECIAL_CHARS);
+$query = filter_input(INPUT_GET, "search", FILTER_SANITIZE_SPECIAL_CHARS);
 
 $books = new BookDaoMysql($pdo);
-$livros = $books->findByCategoria($query);
+$livros = $books->findLikeQuery($query);
 
 $result = ($livros) ? "Resultado(s): ".count($livros) : "Não foram Encontrados Resultados Nessa Categoria...";
 
