@@ -7,6 +7,8 @@ class Book{
     protected $title;
     protected $src;
     protected $capa;
+    protected $autor;
+    protected $categoria;
 
     public function setId($n){
         $this->id = $n;
@@ -24,6 +26,15 @@ class Book{
         $this->capa = $n;
     }
 
+    public function setAutor($n){
+        $this->autor = $n;
+    }
+
+    public function setCategoria($n){
+        $this->categoria = $n;
+    }
+
+
 
     public function getId(){
         return $this->id;
@@ -39,6 +50,14 @@ class Book{
 
     public function getCapa(){
         return $this->capa;
+    }
+
+    public function getAutor(){
+        return $this->autor;
+    }
+
+    public function getCategoria(){
+        return $this->categoria;
     }
 
 }

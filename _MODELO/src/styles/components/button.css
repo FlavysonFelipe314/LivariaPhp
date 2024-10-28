@@ -1,0 +1,15 @@
+button {
+  width: 100%;
+  height: var(--input-height);
+  text-align: center;
+  color: var(--primary-white);
+  border: none;
+  background-color: var(--primary-lightBlue);
+  border-radius: var(--input-borderRadius);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: var(--hover-button);
+}

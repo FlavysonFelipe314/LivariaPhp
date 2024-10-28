@@ -1,0 +1,134 @@
+nav.menu-mobile,
+.header-mobile {
+  display: none;
+}
+
+header {
+  width: 100%;
+  margin: 10px 0;
+}
+
+header > .container > nav.menu-desktop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 150px;
+}
+
+nav.menu-desktop form {
+  width: 35%;
+}
+
+nav.menu-desktop nav {
+  display: flex;
+  align-items: center;
+}
+
+nav.menu-desktop a {
+  margin: 0 25px 0 0;
+}
+
+nav.menu-desktop a:hover {
+  color: var(--primary-lightBlue);
+}
+
+nav.menu-desktop a i {
+  color: var(--primary-lightBlue);
+  margin: 0 5px 0 0;
+}
+
+nav.menu-desktop .avatar-user img {
+  width: 65px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  nav.menu-desktop {
+    display: none !important;
+  }
+
+  .header-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-mobile img {
+    width: 120px;
+  }
+
+  .header-mobile h1 {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--primary-lightBlue);
+  }
+
+  nav.menu-mobile {
+    width: 0;
+    overflow: hidden;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-white);
+    transition: 0.3s;
+  }
+
+  nav.menu-mobile form {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  nav.menu-mobile h1 {
+    width: 90%;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--primary-lightBlue);
+    text-align: end;
+  }
+
+  nav.menu-mobile nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  nav.menu-mobile nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: var(--input-height);
+    border: 1px solid var(--primary-lightBlue);
+    color: var(--primary-darkGray);
+    border-radius: var(--input-borderRadius);
+    margin: 0 0 20px 0;
+  }
+
+  nav.menu-mobile nav a:hover {
+    background-color: var(--hover-menu);
+    color: var(--primary-white);
+    border: none;
+  }
+
+  nav.menu-mobile nav a i {
+    margin: 0 10px 0 0;
+    color: var(--primary-lightBlue);
+  }
+}
+
+/* events */
+
+.open-menuMobile {
+  width: 100% !important;
+  transition: 0.3s !important;
+}

@@ -1,0 +1,10 @@
+.form-wraper-100 {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.form-wraper-100 label {
+  line-height: 2;
+  color: var(--primary-lightBlue);
+  font-size: 14px;
+}

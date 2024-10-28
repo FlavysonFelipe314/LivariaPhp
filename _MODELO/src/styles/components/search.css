@@ -1,0 +1,8 @@
+#searchBar {
+  display: flex;
+}
+
+#searchBar button {
+  width: 70px;
+  margin: 0 10px 0 0;
+}

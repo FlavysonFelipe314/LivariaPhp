@@ -1,0 +1,58 @@
+:root {
+  /* Colors */
+  --primary-white: #ffffff;
+  --primary-black: #01020a;
+  --primary-lightGray: #cccccc;
+  --primary-lightBlue: #858bf8;
+  --primary-darkBlue: #797ee7;
+  --primary-darkGray: #666;
+  --primary-green: #65ce91;
+  --primary-red: #f05252;
+
+  /* Hovers */
+  --hover-button: #797ee7;
+  --hover-menu: #b9bcff;
+
+  /* Inputs */
+  --input-height: 45px;
+  --input-borderRadius: 10px;
+  --input-border: 1px solid #cccccc;
+  --input-fontSize: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-lightGray);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-lightBlue);
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  .container {
+    padding: 0 4%;
+  }
+}

@@ -1,0 +1,84 @@
+section.circle-menu {
+  width: 95%;
+  margin: 40px auto;
+  padding: 0 4%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+section.circle-menu::-webkit-scrollbar {
+  display: none;
+  height: 2px;
+}
+
+section.circle-menu::-webkit-scrollbar-track {
+  background: var(--primary-lightGray);
+  border-radius: 10px;
+}
+
+section.circle-menu::-webkit-scrollbar-thumb {
+  height: 2px;
+  background-color: var(--primary-lightBlue);
+  border-radius: 10px;
+}
+
+section.circle-menu nav {
+  display: flex;
+  justify-content: center;
+}
+
+section.circle-menu a {
+  text-align: center;
+  margin: 0 30px 0 0;
+}
+
+section.circle-menu a p {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  color: var(--primary-darkGray);
+}
+
+section.circle-menu .single-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color: var(--primary-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.circle-menu .single-circle:hover {
+  background-color: var(--primary-darkBlue);
+}
+
+section.circle-menu .single-circle img {
+  width: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  section.circle-menu {
+    width: 90%;
+    padding: 0 0 15px 0;
+  }
+
+  section.circle-menu::-webkit-scrollbar {
+    display: flex;
+    height: 5px;
+    cursor: pointer;
+  }
+
+  section.circle-menu nav {
+    display: flex;
+    justify-content: start;
+  }
+
+  section.circle-menu .single-circle {
+    width: 65px;
+    height: 65px;
+  }
+
+  section.circle-menu .single-circle img {
+    width: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.book-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px var(--primary-lightGray);
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  border: 1px solid var(--primary-black);
+}
+
+.book-card h2 {
+  color: var(--primary-black);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.book-card h3 {
+  color: var(--primary-lightBlue);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.book-card button {
+  margin: 10px 0 0 0;
+}

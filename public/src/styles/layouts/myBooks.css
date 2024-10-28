@@ -1,0 +1,52 @@
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0;
+}
+
+section.books-content > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.books-content div.single-book {
+  width: calc(100% / 5);
+  padding: 20px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options a {
+  width: 49%;
+}
+
+.options button {
+  background-color: var(--primary-green);
+}
+
+.options a:nth-child(2) button {
+  background-color: var(--primary-red) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  section.books-content div.single-book {
+    width: calc(100% / 2);
+    padding: 10px;
+  }
+
+  section.books-content {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.books-content div.single-book {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

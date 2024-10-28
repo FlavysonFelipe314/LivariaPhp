@@ -1,0 +1,48 @@
+.book-card {
+  width: 100%;
+  padding: 20px;
+  height: 55vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px var(--primary-lightGray);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: 35vh;
+  border: 1px solid var(--primary-black);
+}
+
+.book-card h2 {
+  color: var(--primary-black);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.book-card h3 {
+  color: var(--primary-lightBlue);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.book-card a {
+  width: 100%;
+}
+
+.book-card button {
+  margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .book-card img {
+    height: 60vh;
+  }
+  .book-card {
+    height: 80vh;
+  }
+}
