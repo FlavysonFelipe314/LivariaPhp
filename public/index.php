@@ -10,11 +10,9 @@ $livros = $books->read();
 
 include_once "../partials/header.php";
 ?>
-<head>
-    <link rel="stylesheet" href="<?= $base?>/src/styles/layouts/home.css" />
-</head>
-
-
+  <head>
+      <link rel="stylesheet" href="<?= $base?>/src/styles/layouts/home.css" />
+  </head>
 
     <section class="circle-menu">
       <nav>

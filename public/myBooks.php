@@ -14,7 +14,7 @@ include_once "../partials/header.php";
     <link rel="stylesheet" href="<?= $base?>/src/styles/layouts/myBooks.css" />
 </head>
 
-<h1>Meus Livros</h1>
+    <h1>Meus Livros</h1>
     <section class="books-content">
       <div class="container">
       <?php foreach ($livros as $livro):?>

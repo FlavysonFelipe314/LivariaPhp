@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/10/2024 às 20:53
+-- Tempo de geração: 28/10/2024 às 06:20
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -31,16 +31,17 @@ CREATE TABLE `books` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `src` varchar(255) NOT NULL,
-  `capa` varchar(255) NOT NULL
+  `capa` varchar(255) NOT NULL,
+  `autor` varchar(255) NOT NULL,
+  `categoria` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `books`
 --
 
-INSERT INTO `books` (`id`, `title`, `src`, `capa`) VALUES
-(14, 'livro de php e mysql', 'BOOK1377766b50888bd06db0d8404f2f4e1c.pdf', 'CAPA7074ec16ae5e1ef071221db5c437343a.png'),
-(15, 'apostila php e mysql', 'BOOK97aa4114b1b88a3144f8bdae243cda5c.pdf', 'CAPA821431e48b8485d9b29437c425f40c3c.png');
+INSERT INTO `books` (`id`, `title`, `src`, `capa`, `autor`, `categoria`) VALUES
+(20, 'a arte da guerra livro', 'BOOK7de839eb995f5d0874c33f4b648974e8.pdf', 'CAPA8e5e954986ade14d52ef1b86aef3a113.png', 'sun tzu (sunzi)', 'outros');
 
 --
 -- Índices para tabelas despejadas
@@ -60,7 +61,7 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT de tabela `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
